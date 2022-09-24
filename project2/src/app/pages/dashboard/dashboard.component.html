@@ -1,0 +1,37 @@
+<div class="row">
+  <div clas="col-md-2">
+
+  </div>
+  <div clas="col-md-6">
+    <div class="card" style="width: 50rem;">
+      <div class="text-center">
+        <div class="card-header">
+          Datos
+        </div>
+        <div class="card-body">
+          <thead style="border: 1px solid #0000;">
+            <tr class="row">
+              <th class="col">ID</th>
+              <th class="col">Usuario ID</th>
+              <th class="col">Titulo</th>
+              <th class="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let dato of data" class="row">
+              <td class="col">{{dato.id}}</td>
+              <td class="col">{{dato.userId}}</td>
+              <td class="col">{{dato.title}}</td>
+              <td class="col">{{dato.completed}}</td>
+            </tr>
+          </tbody>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div clas="col-md-2">
+
+  </div>
+</div>
+
+
